@@ -20,22 +20,19 @@ function createUI() {
     let li = createElement(
       "li",
       {},
-      createElement("p", { "data-id": i }, movie.name),
+      createElement("p", {}, movie.name),
       createElement(
         "button",
-        {
-          "data-id": i,
-          className: "btn",
-          addEventListener: clickHandler(i),
-        },
+        { id: i, onClick: clickHandler },
         movie.isWatched ? "Watched" : "To Watch"
       )
     );
     root.append(li);
   });
 }
-function clickHandler(event, i) {
-  moviesList[i].isWatched = !moviesList[i].isWatched;
+function clickHandler(event) {
+  let id = event.target.id;
+  moviesList[id].isWatched = !moviesList[id].isWatched;
   createUI();
 }
 
@@ -46,6 +43,9 @@ function createElement(tagName, attribute = {}, ...childrens) {
   for (let key in attribute) {
     if (key.startsWith("data-")) {
       element.setAttribute(key, attribute[key]);
+    } else if (key.startsWith("on")) {
+      let eventType = key.replace("on", "").toLowerCase();
+      element.addEventListener(eventType, attribute[key]);
     } else {
       element[key] = attribute[key];
     }
