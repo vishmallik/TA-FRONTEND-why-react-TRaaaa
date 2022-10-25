@@ -70,25 +70,25 @@
                 <div className="inner">
                     <div className="parent">
                         <div className="img-parent">
-                            <img src={props.imgURL} alt={props.title} />
-                            <div className="category">{props.category.toUpperCase()}</div>
+                            <img src={props.articleInfo.imageURL} alt={props.articleInfo.title} />
+                            <div className="category">{props.articleInfo.category.toUpperCase()}</div>
                             <div className="date">
-                                <p>{props.date.getDate()}</p>
-                                <p>{props.date.toDateString().slice(4, 7)}</p>
+                                <p>{props.articleInfo.date.getDate()}</p>
+                                <p>{props.articleInfo.date.toDateString().slice(4, 7)}</p>
                             </div>
                         </div>
                         <div className="text-parent">
-                            <h3>{props.title}</h3>
-                            <h4>{props.subTitle}</h4>
-                            <p>{props.description}</p>
+                            <h3>{props.articleInfo.title}</h3>
+                            <h4>{props.articleInfo.subTitle}</h4>
+                            <p>{props.articleInfo.description}</p>
                             <div>
                                 <span>
                                     <i className="fa-solid fa-clock"></i>
-                                    {new Date().getFullYear() - props.date.getFullYear()} years ago
+                                    {new Date().getFullYear() - props.articleInfo.date.getFullYear()} years ago
                                 </span>
                                 <span>
                                     <i className="fa-solid fa-comments"></i>
-                                    {props.comments} Comments</span>
+                                    {props.articleInfo.comments} Comments</span>
                             </div>
                         </div>
                     </div>
@@ -99,13 +99,7 @@
             return articles.map((article) => {
                 return (<>
                     <Article
-                        title={article.title}
-                        date={article.date}
-                        comments={article.comments}
-                        subTitle={article.subTitle}
-                        description={article.description}
-                        category={article.category}
-                        imgURL={article.imageURL}
+                        articleInfo={article}
                     />
                 </>)
             })
