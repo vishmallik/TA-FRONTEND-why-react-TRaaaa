@@ -172,7 +172,6 @@ img {
   background-color: rgb(231, 76, 58);
   width: 80px;
   height: 80px;
-  /* padding: 0.5rem 0; */
   top: 50px;
   right: 50px;
   border-radius: 50%;
@@ -222,6 +221,4 @@ h4 {
 #root {
   display: flex;
   justify-content: space-between;
-}
-h1 {
 }
