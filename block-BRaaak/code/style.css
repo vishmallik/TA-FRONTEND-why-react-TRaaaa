@@ -1,0 +1,224 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif;
+}
+#main {
+  padding: 3rem;
+
+  min-height: 100vh;
+}
+.inner {
+  background-color: rgb(243, 239, 239);
+  padding: 2rem;
+  margin: 1rem;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 300;
+  color: rgb(103, 103, 103);
+}
+.parent {
+  height: 85vh;
+  background-color: white;
+}
+img {
+  width: 100%;
+}
+.img-parent {
+  position: relative;
+}
+.date {
+  position: absolute;
+  background-color: rgb(231, 76, 58);
+  width: 80px;
+  height: 80px;
+  top: 50px;
+  right: 50px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.category {
+  position: absolute;
+  background-color: rgb(231, 76, 58);
+  padding: 0.7rem 1.7rem;
+  bottom: 7px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.5rem;
+  color: rgb(231, 76, 58);
+}
+.text-parent p {
+  color: rgb(103, 103, 103);
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+}
+.text-parent div {
+  color: rgb(153, 153, 153);
+}
+.text-parent span {
+  margin-right: 2rem;
+}
+.fa-solid {
+  margin-right: 0.5rem;
+}
+.text-parent {
+  margin: auto 2rem;
+  padding-bottom: 2rem;
+}
+#root {
+  display: flex;
+  justify-content: space-between;
+}
