@@ -1,0 +1,256 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*custom styles*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+.brand {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li {
+  margin-left: 2rem;
+  a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.parent {
+  background-color: slateblue;
+}
+header {
+  color: white !important;
+  padding: 1rem;
+}
+.hero {
+  min-height: 60vh;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background-image: url("../../public/images/pic.jpg");
+  h1 {
+    font-size: 6rem;
+    padding-top: 18rem;
+  }
+  p {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+}
+.article {
+  width: 32%;
+  align-self: flex-start;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgb(185, 185, 185);
+}
+.img-parent {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0;
+  color: rgb(240, 92, 92);
+}
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.text-parent {
+  margin: 1rem;
+}
+.author {
+  p {
+    display: inline;
+    margin-right: 2rem;
+    color: rgb(139, 139, 139);
+    i {
+      margin-right: 1rem;
+    }
+  }
+}
+.articles {
+  margin-bottom: 2rem;
+}
+.text-parent {
+  a {
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border: 1px solid rgb(240, 92, 92);
+    border-radius: 5555px;
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: rgb(240, 92, 92);
+    color: white;
+    font-weight: 500;
+  }
+}
+.footer {
+  background-color: slateblue;
+  padding: 2rem 0;
+  color: white;
+}
+.socials {
+  a {
+    color: white;
+    margin-left: 4rem;
+  }
+  i {
+    font-size: 1.5rem;
+  }
+}
