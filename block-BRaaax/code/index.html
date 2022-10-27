@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>title</title>
+</head>
+
+<body>
+    <div id="root">
+    </div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        let buttonTypes = {
+            PRIMARY: 'primary', SECONDARY: 'secondary', TERTIARY: 'tertiary',
+        }
+        let buttonSizes = {
+            SMALL: 'small', MEDIUM: 'medium', LARGE: 'large',
+        }
+        function Button(props) {
+            function getStyles() {
+                let { type = 'primary', size = 'medium' } = props;
+                return `button--${type} button--${size}`
+            }
+            return <button className={getStyles()} disabled={props.disabled} onClick={props.onClick}>{props.label || 'button'}</button>
+        }
+        function App() {
+            return (
+                <div>
+                    <Button type={buttonTypes.PRIMARY} size={buttonSizes.LARGE} disabled={true} label="button" />
+                    <Button type={buttonTypes.SECONDARY} label='button2' />
+                    <Button type={buttonTypes.TERTIARY} size={buttonSizes.SMALL} label="Click Me!" />
+                    <Button label="small" size={buttonSizes.MEDIUM} />
+                    <Button type={buttonTypes.SECONDARY} label="medium" onClick={() => alert("You clicked me!")} />
+                </div>
+            )
+        }
+        ReactDOM.render(<App />, document.getElementById('root'))
+    </script>
+</body>
+
+</html>
