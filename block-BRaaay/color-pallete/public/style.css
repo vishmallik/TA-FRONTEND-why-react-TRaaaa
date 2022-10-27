@@ -1,0 +1,55 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.color {
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+
+  margin-bottom: 0.5rem;
+}
+.color-parent {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+.pallete {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 1 90%;
+}
+.name {
+  flex: 0 1 10%;
+  font-weight: 600;
+}
+.name span {
+  font-weight: normal;
+  color: gray;
+  display: block;
+  padding: 0.5rem 0;
+}
+.parent {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+#root {
+  width: 100%;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 4rem;
+}
+.color-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  padding-bottom: 1rem;
+}
+.color-name span:nth-child(2) {
+  color: gray;
+}
+.color-name span:nth-child(1) {
+  font-weight: 600;
+}
